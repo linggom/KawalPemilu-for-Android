@@ -3,13 +3,10 @@ package com.antares.kawalpemilu.tps;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,7 +21,6 @@ import com.antares.kawalpemilu.TabViewPagerAdapter;
 import com.antares.kawalpemilu.client.RestClient;
 import com.antares.kawalpemilu.client.VoteService;
 import com.astuetz.viewpager.extensions.PagerSlidingTabStrip;
-import com.google.gson.Gson;
 
 public class ViewTPSActivity extends ActionBarActivity {
 

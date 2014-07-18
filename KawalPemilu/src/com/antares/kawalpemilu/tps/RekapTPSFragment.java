@@ -7,9 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.NetworkImageView;
 import com.antares.kawalpemilu.MainActivity;
 import com.antares.kawalpemilu.R;
 import com.antares.kawalpemilu.model.CompileResult;
@@ -37,7 +37,7 @@ public class RekapTPSFragment extends Fragment {
 	private int parent;
 	private String [] data;
 	public static final String REKAP = "rekap";
-	private NetworkImageView imageScan;
+	private ImageView imageScan;
 	@Override
 	public void onAttach(Activity activity) {
 		// TODO Auto-generated method stub
@@ -69,7 +69,7 @@ public class RekapTPSFragment extends Fragment {
 
 		textValidCount = (TextView) view.findViewById(R.id.textValidCount);
 		textInvalidCount = (TextView) view.findViewById(R.id.textInvalidCount);
-		imageScan = (NetworkImageView)view.findViewById(R.id.imageScan);
+		imageScan = (ImageView)view.findViewById(R.id.imageScan);
 		imageScan.setVisibility(View.GONE);
 		Style.applyTypeFace(mActivity, FontType.RobotoLight, textCountCandidate1, textCountCandidate2);
 //		imageScan.setImageUrl("http://scanc1.kpu.go.id/viewp.php?f=000000400501.jpg", VolleySingleton.getInstance().getImageLoader());

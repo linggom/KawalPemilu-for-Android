@@ -8,7 +8,6 @@ import retrofit.client.Response;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -16,7 +15,6 @@ import android.widget.TextView;
 import com.antares.kawalpemilu.client.RestClient;
 import com.antares.kawalpemilu.client.VoteService;
 import com.antares.kawalpemilu.model.CompileResult;
-import com.google.gson.Gson;
 
 public class DetailProvinceActivity extends ActionBarActivity {
 
