@@ -1,5 +1,7 @@
 package com.antares.kawalpemilu;
 
+import com.antares.kawalpemilu.client.AlarmReceiver;
+
 import android.app.Application;
 
 public class PemiluApplication extends Application {
@@ -10,6 +12,8 @@ public class PemiluApplication extends Application {
 		// TODO Auto-generated method stub
 		super.onCreate();
 		this.mApps = this;
+		AlarmReceiver a = new AlarmReceiver();
+		a.setAlarm(this);
 	}
 	
 	public static Application getApplication(){

@@ -134,7 +134,9 @@ public class RekapPerCityFragment extends Fragment {
 			textInvalidCount.setText(""+String.format("%,d", res.getInvalidCount()));
 			textErrorCount.setText(""+String.format("%,d", res.getErrorTPS()));
 			textEnteredCount.setText(""+String.format("%,d", res.getEnteredCount()));
-			textAvailableAndTotal.setText(""+String.format("%,d", res.getPending()) +"/" + String.format("%,d", res.getTotal()));
+			double result = ((double)res.getPending() / res.getTotal())*100;
+			angleFormated = df.format(result);
+			textAvailableAndTotal.setText(""+String.format("%,d", res.getPending()) +"/" + String.format("%,d", res.getTotal()) + "("+angleFormated+"%)");
 			btnMasuk.setOnClickListener(mInside);
 		}
 	}
