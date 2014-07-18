@@ -21,11 +21,9 @@ import com.google.gson.Gson;
 public class DetailProvinceActivity extends ActionBarActivity {
 
 
-	private TextView textCandidateName1;
 	private TextView textPercentageCandidate1;
 	private TextView textCountCandidate1;
 
-	private TextView textCandidateName2;
 	private TextView textPercentageCandidate2;
 	private TextView textCountCandidate2;
 
@@ -43,8 +41,6 @@ public class DetailProvinceActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_fragment_rekap);
 
-		textCandidateName1 = (TextView) findViewById(R.id.textCandidateName1);
-		textCandidateName2 = (TextView) findViewById(R.id.textCandidateName2);
 		textCountCandidate1 = (TextView) findViewById(R.id.textCountCandidate1);
 		textCountCandidate2 = (TextView) findViewById(R.id.textCountCandidate2);
 
