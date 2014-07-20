@@ -124,10 +124,10 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
 		// Moves events into the big view
 		inboxStyle.addLine("Prabowo-Hatta : " + String.format("%,d", res.getResultCandidate1()));
 		inboxStyle.addLine("Jokowi-JK : " + String.format("%,d", res.getResultCandidate2()));
-		double result = ((double)res.getPending() / res.getTotal())*100;
+		double result = ((double)res.getEnteredCount() / res.getTotal())*100;
 		DecimalFormat df = new DecimalFormat("#.00");
 		String angleFormated = df.format(result);
-		inboxStyle.addLine("Total Suara Masuk : " + ""+String.format("%,d", res.getPending()) +"/" + String.format("%,d", res.getTotal()) + "("+angleFormated+"%)");		
+		inboxStyle.addLine("Total Suara Masuk : " +angleFormated+" %");		
 		// Moves the big view style object into the notification object.
 		mNotificationBuilder.setStyle(inboxStyle);
 
