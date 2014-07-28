@@ -198,7 +198,7 @@ public class MainActivity extends ActionBarActivity {
 					x = CompileResult.toInt(r[i][9]);
 					a[9]= ""+ (CompileResult.toInt(a[9]) + x) ;;
 				}
-				String [][]newData = new String[r.length +1][10];
+				String [][]newData = new String[r.length +1][20];
 				for (int j = 0; j < r.length+1; j++) {
 
 					if (j == 0){
